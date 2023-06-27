@@ -1,10 +1,23 @@
+---Creat tables
 
 CREATE TABLE IF NOT EXISTS Category (
     category_id varchar(200) NOT NULL,
     category varchar(200) NOT NULL,
-    CONSTRAINT pk_Category PRIMARY KEY (
-        category_id
-     )
+    	PRIMARY KEY (category_id)
+);
+
+CREATE TABLE Subcategory (
+    subcategory_id varchar(200) NOT NULL,
+    subcategory varchar(200) NOT NULL,
+    	PRIMARY KEY (subcategory_id)
+);
+
+CREATE TABLE Contacts (
+    contact_id int NOT NULL,
+    first_name varchar(200) NOT NULL,
+    last_name varchar(200) NOT NULL,
+    email varchar(200) NOT NULL,
+    	PRIMARY KEY (contact_id)
 );
 
 CREATE TABLE IF NOT EXISTS Campaign (
@@ -22,43 +35,27 @@ CREATE TABLE IF NOT EXISTS Campaign (
     end_date date NOT NULL,
     category_id varchar(200) NOT NULL,
     subcategory_id varchar(200) NOT NULL,
-    CONSTRAINT pk_Campaign PRIMARY KEY (
-        cf_id
-     )
+    	PRIMARY KEY (cf_id),
+		foreign key (contact_id) references contacts(contact_id),
+		foreign key (category_id) references category(category_id),
+		foreign key (subcategory_id) references subcategory(subcategory_id)
 );
 
-DROP TABLE Campaign;
+---Verify Database is working correctly
 
-ALTER TABLE campaign ADD CONSTRAINT campaign_unique_key UNIQUE (contact_id, category_id, subcategory_id);
+---Campaign 
+select *
+from Campaign;
 
+---Category
+select *
+from Category;
 
-CREATE TABLE Subcategory (
-    subcategory_id varchar(200) NOT NULL,
-    subcategory varchar(200) NOT NULL,
-    CONSTRAINT pk_Subcategory PRIMARY KEY (
-        subcategory_id
-     )
-);
+---Subcategory
+select *
+from subcategory;
 
-CREATE TABLE Contacts (
-    contact_id int NOT NULL,
-    first_name varchar(200) NOT NULL,
-    last_name varchar(200) NOT NULL,
-    email varchar(200) NOT NULL,
-    CONSTRAINT pk_Contacts PRIMARY KEY (
-        contact_id
-     )
-);
-
-
---adding foreign key constraint
-
-ALTER TABLE Category
-	ADD FOREIGN KEY(category_id)REFERENCES Campaign (category_id);
-
-ALTER TABLE Subcategory 
-	ADD FOREIGN KEY(subcategory_id) REFERENCES Campaign (subcategory_id);
-
-ALTER TABLE Contacts
-	ADD FOREIGN KEY(contact_id) REFERENCES Campaign (contact_id);
+---Contacts
+select *
+from contacts;
 
