@@ -44,8 +44,6 @@ Create the Contacts DataFrame
 
 Use Python dictionary methods.
 
-![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/1a998bde-7e2c-45aa-8c04-37d669241752)
-
 Import the contacts.xlsx file into a DataFrame.
 Iterate through the DataFrame, converting each row to a dictionary.
 Iterate through each dictionary, doing the following:
@@ -54,6 +52,16 @@ Add the values for each row to a new list.
 Create a new DataFrame that contains the extracted data.
 Split each "name" column value into a first and last name, and place each in a new column.
 Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
+
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/812b1040-082d-4715-8e25-cdd296027d30)
+
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/78df34a9-9905-415f-a193-171e48c85ec2)
+
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/52a12d04-5771-434e-92e9-f80b968878fa)
+
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/11580a93-77b8-4f62-bbf9-4a9bc9330dc3)
+
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/5e515a75-4c31-48e8-a263-8fff76b1529f)
 
 ![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/6231a78f-d18e-4826-84b6-377f4b716a89)
 
