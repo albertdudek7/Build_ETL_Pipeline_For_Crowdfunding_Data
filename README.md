@@ -37,14 +37,14 @@ Extract and transform the crowdfunding.xlsx Excel data to create a campaign Data
 
 ![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/4586e9ef-918f-4468-a0e2-6c56a37a728e)
 
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/0f4f6559-33c2-4828-a28f-36bb0cbd8de9)
+
+
 Create the Contacts DataFrame
-Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Excel data:
 
-Option 1: Use Python dictionary methods.
+Use Python dictionary methods.
 
-Option 2: Use regular expressions.
-
-If you chose Option 1, complete the following steps:
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/1a998bde-7e2c-45aa-8c04-37d669241752)
 
 Import the contacts.xlsx file into a DataFrame.
 Iterate through the DataFrame, converting each row to a dictionary.
@@ -54,17 +54,10 @@ Add the values for each row to a new list.
 Create a new DataFrame that contains the extracted data.
 Split each "name" column value into a first and last name, and place each in a new column.
 Clean and export the DataFrame as contacts.csv and save it to your GitHub repository.
-If you chose Option 2, complete the following steps:
 
-Import the contacts.xlsx file into a DataFrame.
-Extract the "contact_id", "name", and "email" columns by using regular expressions.
-Create a new DataFrame with the extracted data.
-Convert the "contact_id" column to the integer type.
-Split each "name" column value into a first and a last name, and place each in a new column.
-Clean and then export the DataFrame as contacts.csv and save it to your GitHub repository.
-Check that your final DataFrame resembles the one in the following image:
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/6231a78f-d18e-4826-84b6-377f4b716a89)
 
-final contact DataFrame
+
 
 Create the Crowdfunding Database
 Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
