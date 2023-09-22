@@ -25,41 +25,17 @@ A "category" column that contains only the category titles
 
 
 Create the Campaign DataFrame
-Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame has the following columns:
+Extract and transform the crowdfunding.xlsx Excel data to create a campaign DataFrame:
 
-The "cf_id" column
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/7d49d3a9-7d12-4361-805b-7e2336a4d8d5)
 
-The "contact_id" column
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/0b9bebd1-b926-4753-8b53-473a42650633)
 
-The "company_name" column
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/ad2bb811-37e0-4b07-85fc-2174018a81f6)
 
-The "blurb" column, renamed to "description"
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/9fc45b9d-3afb-4959-8a4b-f101e9edcc5b)
 
-The "goal" column, converted to the float data type
-
-The "pledged" column, converted to the float data type
-
-The "outcome" column
-
-The "backers_count" column
-
-The "country" column
-
-The "currency" column
-
-The "launched_at" column, renamed to "launch_date" and with the UTC times converted to the datetime format
-
-The "deadline" column, renamed to "end_date" and with the UTC times converted to the datetime format
-
-The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
-
-The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
-
-The following image shows this campaign DataFrame:
-
-campaign DataFrame
-
-Export the campaign DataFrame as campaign.csv and save it to your GitHub repository.
+![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/4586e9ef-918f-4468-a0e2-6c56a37a728e)
 
 Create the Contacts DataFrame
 Choose one of the following two options for extracting and transforming the data from the contacts.xlsx Excel data:
