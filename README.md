@@ -63,9 +63,6 @@ Clean and export the DataFrame as contacts.csv and save it to your GitHub reposi
 
 ![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/5e515a75-4c31-48e8-a263-8fff76b1529f)
 
-![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/6231a78f-d18e-4826-84b6-377f4b716a89)
-
-
 
 Create the Crowdfunding Database
 Inspect the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks to an external site..
@@ -74,10 +71,6 @@ Use the information from the ERD to create a table schema for each CSV file.
 
 ![image](https://github.com/albertdudek7/Build_ETL_Pipeline_For_Crowdfunding_Data/assets/127783844/81769dcb-95ae-417a-9462-761b34b23f0f)
 
-
-Note: Remember to specify the data types, primary keys, foreign keys, and other constraints.
-
-Save the database schema as a Postgres file named crowdfunding_db_schema.sql, and save it to your GitHub repository.
 
 Create a new Postgres database, named crowdfunding_db.
 
